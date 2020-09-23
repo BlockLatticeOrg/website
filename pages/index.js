@@ -3,62 +3,60 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="container">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <header>
+        <img src="" alt="logo" />
+        <div className="nano-quotation">
+          <label>1N USD 0.94</label> <label> +1.51%^ </label>
+        </div>
+        <div className="select-language">
+          icon Engish
+        </div>
+        <div className="search-header">Icon search</div>
+      </header>
+
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div className="title-main">
+          <h1 className={styles.title}>
+            Account name lorem ipsum dolor sit
+          </h1>
+        </div>
+        <div className="my-nano-quantity">
+          icon eye
+          N 2,335.854896
+          USD $2,183.93
+          BTC 0.237816
+          0.00 NANO pending
+        </div>
+        <div className="handle-page">
+          icon copy
+          <div className="qrcode">
+            QRKode  
+          </div>  
+          icon share
         </div>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+        <ul>
+          <li>
+            Abount blocklattice.org
+          </li>
+          <li>
+            About Nano
+          </li>
+          <li>
+            Network Status
+          </li>
+          <li>
+          &copy; 2020 BlockLattice.Org. All Right Reserved
+          </li>
+        </ul>
       </footer>
     </div>
   )
