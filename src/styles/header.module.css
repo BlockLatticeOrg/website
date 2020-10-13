@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 45px;
+}
+
+.labellabelLogo label {
+  margin-left: 10px;
+}
+
+.selectLanguage {
+  color: #4a90e2;
+}
+
+.searchHeader {
+  color: #4a90e2;
+  width: 20px;
+  height: 20px;
+}
