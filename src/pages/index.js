@@ -1,24 +1,18 @@
+import React from 'react'
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+
+import Header from '../components/Header'
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Blocklattice.org</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header>
-        <img src="" alt="logo" />
-        <div className="nano-quotation">
-          <label>1N USD 0.94</label> <label> +1.51%^ </label>
-        </div>
-        <div className="select-language">
-          icon Engish
-        </div>
-        <div className="search-header">Icon search</div>
-      </header>
+      <Header />
 
       <main className={styles.main}>
         <div className="title-main">
@@ -36,8 +30,8 @@ export default function Home() {
         <div className="handle-page">
           icon copy
           <div className="qrcode">
-            QRKode  
-          </div>  
+            QRKode
+          </div>
           icon share
         </div>
       </main>
