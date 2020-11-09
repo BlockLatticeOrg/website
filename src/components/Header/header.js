@@ -1,4 +1,4 @@
-import { CgGlobeAlt, CgSearch } from 'react-icons/cg';
+import { CgGlobeAlt, CgSearch } from 'react-icons/cg'
 import styles from '../../styles/header.module.css'
 import  Breadcrumbs from '../ Breadcrumbs'
 
