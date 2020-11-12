@@ -6,7 +6,7 @@ export default function Footer() {
         <footer className={styles.footer}>
           <ul>
             <li>
-              Abount blocklattice.org
+              About blocklattice.org
             </li>
             <li>
               About Nano
