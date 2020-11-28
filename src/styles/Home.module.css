@@ -1,22 +1,38 @@
 .container {
-  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 45px 45px 0;
 }
 
-.main {
-  padding: 70px 0;
-  flex: 1;
+.insert {
+  margin-bottom: 60px;
+  font-weight: normal;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
-.title {
-  margin: 0;
-  line-height: 56px;
-  font-size: 42px;
-  width: 418px;
+.insert .title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.adressNano {
+  align-self: flex-end;
+  width: 100%;
+  border-top-width: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-bottom: 3px solid #F0F0F3;
+  transition: 0.2s;
+}
+
+.adressNano:focus {
+  border-bottom: 3px solid #4A90E2;
+  outline: none;
 }
 
 .description {
@@ -36,12 +52,19 @@
   transition: color 0.15s ease, border-color 0.15s ease;
 }
 
-.titleMain {
+.iconsMain {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin-top: 80px;
 }
 
-.myNanoQty {
-  width: 300px;
+.iconsMain img {
+  margin-right: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .main {
+    min-height: 500px;
+  }
 }

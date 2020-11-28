@@ -5,7 +5,8 @@ import styles from '../styles/Home.module.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-export default function Home() {
+export default function Home(props) {
+
   return (
     <div className={styles.container}>
       <Head>
@@ -13,33 +14,35 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Header />  
 
       <main className={styles.main}>
-        <div className={styles.titleMain}>
-          <h1 className={styles.title}>
-            Account name lorem ipsum dolor sit
-          </h1>
-          <div className={styles.myNanoQty}>
-            icon eye
-            N 2,335.854896
-            USD $2,183.93
-            BTC 0.237816
-            0.00 NANO pending
+        <div className={styles.insert}>
+          <div className={styles.title}>
+            <h1>Insert NANO address or block hash</h1>
+            <img src="/assets/arrow_right.svg" alt="Open Camera" />
           </div>
+          <input className={styles.adressNano} type="text"/>
         </div>
-        
-        <div className="handle-page">
-          icon copy
-          <div className="qrcode">
-            QRKode
-          </div>
-          icon share
+        <div className={styles.iconsMain}>
+          <img src="/assets/open_camera.svg" alt="Open Camera" />
+          <img src="/assets/icon_copy.svg" alt="Open Camera" />
         </div>
+
       </main>
 
       <Footer />
 
     </div>
   )
+}
+
+export async function getServerSideProps() {
+  const response = await fetch("https://explorer.api.blocklattice.org/v1/accounts/nano_3tcmixp3f5d5qan58jdknnc55hy9m6jd7gkkmsjsd1fksd159giba6rs9sas/info?representative=true&weight=true&pending=true");
+  const data = await response.json();
+  return {
+    props: {  
+      accountsInfo: data,
+    }
+  }
 }
