@@ -2,7 +2,7 @@
 
 The Website Blockllattice is one of the parts of the [BlockLattice.org](https://blocklattice.org/) ecosystem. It's a Webpage that uses API of Block Accounts information. 
 
-If you want to contribute to this project, follow the steps below to install and code. But we recommend accessing our group on the telegran to chat better. You can also access the layout by giving pages in the zeplin tool.
+If you want to contribute to this project, follow the steps bellow to install and code. But we recommend accessing our group on the telegran to chat better. You can also access the layout by giving pages in the zeplin tool.
 
 Telegran Group: https://t.me/joinchat/RWgbJxrrvxwsjfluRPhVoA
 
