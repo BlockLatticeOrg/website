@@ -26,7 +26,7 @@ Second step to develop with Nextjs you will open the page on localhost:3000 in d
 $ yarn dev
 ```
 
-Before commit and push, please test your code using simulation of production by Nextjs
+Before commit and push, please test your code using production simulation of Nextjs
 ```bash
 $ yarn build && yarn start
 ```
