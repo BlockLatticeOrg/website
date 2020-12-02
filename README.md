@@ -4,7 +4,7 @@ The Website Blockllattice is one of the parts of the [BlockLattice.org](https://
 
 If you want to contribute to this project, follow the steps bellow to install and code. But we recommend accessing our group on the telegran to chat better. You can also access the layout by giving pages in the zeplin tool.
 
-Telegran Group: https://t.me/joinchat/RWgbJxrrvxwsjfluRPhVoA
+Telegram group: https://t.me/joinchat/RWgbJxrrvxwsjfluRPhVoA
 
 Layout Pages in Zeplin: https://app.zeplin.io/project/5f538cf5c70ac17ba984437f/dashboard
 
