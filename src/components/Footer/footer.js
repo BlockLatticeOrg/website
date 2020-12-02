@@ -4,7 +4,7 @@ export default function Footer() {
     return(
       <>
         <footer className={styles.footer}>
-          <ul>
+          <ul className={styles.footerList}>
             <li>
               About blocklattice.org
             </li>
@@ -15,7 +15,7 @@ export default function Footer() {
               Network Status
             </li>
             <li>
-            &copy; 2020 BlockLattice.Org. All Right Reserved
+              &copy; 2020 BlockLattice.org. All Rights Reserved
             </li>
           </ul>
         </footer>
