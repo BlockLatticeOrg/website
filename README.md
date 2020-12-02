@@ -31,7 +31,7 @@ Before commit and push, please test your code using production simulation of Nex
 $ yarn build && yarn start
 ```
 
-Do not forget create and push your new feature, after create Pull Request to Master
+Do not forget to create and push your new feature, then create a Pull Request to Master
 ```bash
 $ git checkout -b feature/<my-feature>
 ```
