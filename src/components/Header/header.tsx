@@ -1,5 +1,5 @@
 import { CgGlobeAlt, CgSearch } from 'react-icons/cg'
-import styles from '../../styles/header.module.css'
+import styles from './header.module.css'
 
 export default function Header() {
   return (
