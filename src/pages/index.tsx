@@ -11,7 +11,7 @@ export default function Home(props) {
     <div className={styles.container}>
       <Head>
         <title>Blocklattice.org</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" sizes="32x32" href="/favicon.ico" />
       </Head>
 
       <Header />  
