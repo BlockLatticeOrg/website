@@ -36,13 +36,3 @@ export default function Home(props) {
     </div>
   )
 }
-
-export async function getServerSideProps() {
-  const response = await fetch("https://explorer.api.blocklattice.org/v1/accounts/nano_3tcmixp3f5d5qan58jdknnc55hy9m6jd7gkkmsjsd1fksd159giba6rs9sas/info?representative=true&weight=true&pending=true");
-  const data = await response.json();
-  return {
-    props: {  
-      accountsInfo: data,
-    }
-  }
-}
