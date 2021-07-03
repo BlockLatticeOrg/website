@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 45px 45px 0;
 }
 
 .insert {
@@ -61,6 +60,10 @@
 
 .iconsMain img {
   margin-right: 30px;
+}
+
+.main {
+  padding: 45px 45px 0;
 }
 
 @media only screen and (max-width: 767px) {

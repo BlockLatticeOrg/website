@@ -1,5 +1,5 @@
 import { CgGlobeAlt, CgSearch } from 'react-icons/cg'
-import styles from './header.module.css'
+import styles from './_header.module.scss'
 
 import { useState } from 'react'
 
@@ -13,7 +13,7 @@ export default function Header() {
           <label>{title}</label>
         </div>
 
-        <div className="nano-quotation">
+        <div className={styles.nanoQuotation}>
           <label>Price: <span id="amount">8</span> <span id="currency">USD</span></label>
           <label>+1.51%</label>
         </div>

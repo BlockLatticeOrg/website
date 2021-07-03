@@ -52,7 +52,6 @@ export default function Home(props) {
   )
 }
 
-
 const get = function (url) {
   const options = { timeout: 1000 * 30 }
   return new Promise(async function (resolve, reject) {
@@ -80,7 +79,6 @@ const get = function (url) {
       })
   })
 }
-
 
 export function getServerSideProps() {
 

@@ -1,0 +1,40 @@
+$nanoBlue: #4a90e2;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 90px;
+  padding: 0 45px;
+
+  .labellabelLogo label {
+    margin-left: 10px;
+  }
+
+  .selectLanguage {
+    color: $nanoBlue;
+  }
+
+  .searchHeader {
+    color: $nanoBlue;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    border-bottom: 1px solid $nanoBlue;
+    justify-content: flex-start;
+    min-height: 60px;
+    
+    .nanoQuotation,
+    .selectLanguage,
+    .searchHeader {
+      display: none;
+    }
+  }
+
+}
