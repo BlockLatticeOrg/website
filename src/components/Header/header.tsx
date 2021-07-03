@@ -1,5 +1,5 @@
 import { CgGlobeAlt, CgSearch } from 'react-icons/cg'
-import styles from './header.module.css'
+import styles from './_header.module.scss'
 
 export default function Header() {
   return (
@@ -10,7 +10,7 @@ export default function Header() {
           <label>BLOCKLATTICE.ORG</label>
         </div>
 
-        <div className="nano-quotation">
+        <div className={styles.nanoQuotation}>
           <label>1N USD 0.94 </label>
           <label> +1.51%^ </label>
         </div>
