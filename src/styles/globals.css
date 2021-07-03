@@ -15,3 +15,152 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+/* camera QR scanner */
+
+.camera-preview {
+  position: relative;
+  width: 100%;
+  min-height: 160px;
+  display: flex;
+  justify-content: center;
+}
+
+.camera-video-preview {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.camera-name {
+  position: absolute;
+  width: 120px;
+  height: 40px;
+  left: 10px;
+  bottom: 10px;
+  font-size: 14px;
+  color: white;
+}
+
+.camera-name span {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.camera-error {
+  position: absolute;
+  left: auto;
+  bottom: 0px;
+  display: none;
+  margin: 0;
+}
+
+.camera-switch {
+  display: none;
+  position: absolute;
+  width: 86px;
+  height: 74px;
+  right: 10px;
+  bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  background-image: url("/assets/camera-switch.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+
+#addNanoAddress{
+  font-size: 22px;
+  color: #555;
+}
+
+
+
+/* general */
+
+.btnMain {
+  border: 0;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  background-size: cover;
+  border-radius: 100%;
+  margin: 5px 15px;
+  background-color: #4a90e2;
+  mask-size: cover;
+}
+
+.btnMain:hover {
+  background-color: #999;
+}
+
+.btnMain:focus {
+  transform: scale(.8);
+}
+
+.btnCamera {
+  mask: url(/assets/open_camera.svg)
+}
+
+.btnCopy {
+  mask: url(/assets/icon_copy.svg)
+}
+
+.nano-quotation label:last-child {
+  margin-left: 10px;
+  color: green;
+}
+
+.qr-modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000000;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.9);
+  display: none;
+}
+
+.qr-content {
+  width: 500px;
+  height: 500px;
+  top: calc(50% - 200px);
+  left: calc(50% - 250px);
+  position: absolute;
+}
+
+#qr-reader {
+  border-radius: 3px;
+}
+
+#qr-shaded-region {
+  border-radius: 3px;
+}
+
+#qr-reader video {
+  border-radius: 3px;
+}
+
+.close {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 100%;
+  padding: 10px;
+  color: #fff;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #ea5365;
+}

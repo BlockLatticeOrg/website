@@ -20,7 +20,7 @@
   justify-content: space-between;
 }
 
-.adressNano {
+.addressNano {
   align-self: flex-end;
   width: 100%;
   border-top-width: 0;
@@ -30,7 +30,7 @@
   transition: 0.2s;
 }
 
-.adressNano:focus {
+.addressNano:focus {
   border-bottom: 3px solid #4A90E2;
   outline: none;
 }
