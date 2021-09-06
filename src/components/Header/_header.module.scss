@@ -9,6 +9,11 @@ $nanoBlue: #4a90e2;
   min-height: 90px;
   padding: 0 45px;
 
+  .nanoQuotation label:last-child {
+    margin-left: 10px;
+    color: green;
+  }  
+
   .labellabelLogo label {
     margin-left: 10px;
   }
