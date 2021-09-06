@@ -23,13 +23,13 @@ export default function Home(props) {
         <div className={styles.insert}>
           <div className={styles.title}>
             <h1>Insert NANO address or block hash</h1>
-            <img src="/assets/arrow_right.svg" alt="Open Camera" />
+            <img src="/assets/arrow_right.svg" data-alt="Open Camera" />
           </div>
           <input className={styles.addressNano} type="text" id="addNanoAddress" />
         </div>
         <div className={styles.iconsMain}>
-          <button className="btnMain btnCamera" alt="Open Camera" id="open_camera" />
-          <button className="btnMain btnCopy" alt="Copy" id="copy" />
+          <button className="btnMain btnCamera" data-alt="Open Camera" id="open_camera" />
+          <button className="btnMain btnCopy" data-alt="Copy" id="copy" />
         </div>
 
       </main>
@@ -37,7 +37,7 @@ export default function Home(props) {
       <div className="qr-modal">
         <div className="qr-content">
           <div id="qr-reader" style={{ width: '500px' }}></div>
-          <div className="close">X</div>
+          <div className="close" id="close_camera">X</div>
         </div>
       </div>
 
@@ -73,7 +73,7 @@ const get = function (url) {
         } else if (err.request) {
           reject("no response from node");
         } else {
-          reject('Error', err.message);
+          reject(err.message);
         }
 
       })
